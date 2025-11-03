@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aurora – Tu Guía de Empoderamiento</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,6 +21,26 @@
     </form>
 
     <div id="coachResponse"></div>
+
+    <hr />
+    <h2>Calendario emocional</h2>
+    <div id="calendar"></div>
+
+    <div id="note-section" style="display: none; margin-top: 10px;">
+      <h3>Día <span id="selected-day"></span></h3>
+
+      <label>Estado emocional:</label><br />
+      <select id="emotion-select">
+        <option value="feliz">😊 Feliz</option>
+        <option value="calma">🧘 Calma</option>
+        <option value="triste">😢 Triste</option>
+      </select><br /><br />
+
+      <textarea id="note-text" placeholder="Escribe tu reflexión o meta..."></textarea><br />
+
+      <button onclick="saveNote()">💾 Guardar</button>
+      <button onclick="deleteNote()">🗑️ Borrar</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
