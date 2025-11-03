@@ -1,0 +1,15 @@
+{
+  "name": "Aurora – Tu Guía de Empoderamiento",
+  "short_name": "Aurora",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "App emocional con IA para empoderarte cada día.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
