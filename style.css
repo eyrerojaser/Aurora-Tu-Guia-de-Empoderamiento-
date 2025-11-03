@@ -1,6 +1,4 @@
-# Crear el archivo style.css con estilo femenino y organizado para la app Aurora
 
-css_code = """
 /* Estilo general */
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -42,41 +40,3 @@ form input, form textarea, form button {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
-}
-
-form button {
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #e45a9d;
-}
-
-/* Calendario */
-#calendar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.day {
-    width: 14%;
-    padding: 1rem;
-    background-color: #ffe4e1;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.day:hover {
-    background-color: #ffccd5;
-}
-
-.day
