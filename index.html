@@ -1,48 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora – Tu Guía de Empoderamiento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Diario Emocional - Aurora</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="app-container">
-    <h1>Aurora 🌸</h1>
-    <p>Tu guía de empoderamiento personal</p>
+<body class="diario-page">
+  <h1>Mi Diario Emocional</h1>
 
-    <form id="userForm">
-      <input type="text" placeholder="Nombre y Apellido" required />
-      <input type="number" placeholder="Edad" required />
-      <textarea placeholder="Comparte tus reflexiones o victorias..."></textarea>
-      <input type="file" accept="image/*" />
-      <button type="submit">Guardar</button>
-    </form>
+  <form id="diario-form">
+    <label for="texto">Escribe tu reflexión:</label>
+    <textarea id="texto" rows="6" placeholder="¿Cómo te sientes hoy?"></textarea>
 
-    <div id="coachResponse"></div>
+    <label for="emoji">Elige un emoji:</label>
+    <select id="emoji">
+      <option value="😊">😊 Feliz</option>
+      <option value="😢">😢 Triste</option>
+      <option value="😡">😡 Enojado/a</option>
+      <option value="😴">😴 Cansado/a</option>
+      <option value="😇">😇 Agradecido/a</option>
+    </select>
 
-    <hr />
-    <h2>Calendario emocional</h2>
-    <div id="calendar"></div>
+    <label for="imagen">Sube una foto del día:</label>
+    <input type="file" id="imagen" accept="image/*"/>
 
-    <div id="note-section" style="display: none; margin-top: 10px;">
-      <h3>Día <span id="selected-day"></span></h3>
+    <button type="submit">Guardar</button>
+  </form>
 
-      <label>Estado emocional:</label><br />
-      <select id="emotion-select">
-        <option value="feliz">😊 Feliz</option>
-        <option value="calma">🧘 Calma</option>
-        <option value="triste">😢 Triste</option>
-      </select><br /><br />
+  <div id="preview"></div>
 
-      <textarea id="note-text" placeholder="Escribe tu reflexión o meta..."></textarea><br />
+  <a href="index.html" class="volver-btn">← Volver al inicio</a>
 
-      <button onclick="saveNote()">💾 Guardar</button>
-      <button onclick="deleteNote()">🗑️ Borrar</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="diario.js"></script>
 </body>
 </html>
