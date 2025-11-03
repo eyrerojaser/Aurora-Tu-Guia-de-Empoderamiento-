@@ -1,0 +1,23 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f9d5ec, #ffe6f7);
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
